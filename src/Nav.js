@@ -37,11 +37,11 @@ function Nav() {
 
     <div className={ ` ${showlinks? "nav-show show-container" : 'nav-show'}`}>
         <ul className='link-element'>
-            <li>Home</li>
-            <li>Business</li>
-            <li>Sport</li>
-            <li>Tech</li>
-            <li>Science</li>
+            {/* <li onClick={()=> navigate("/")}>Home</li> */}
+            <li onClick={()=> navigate("/business")}>Business</li>
+            <li onClick={()=> navigate("/sport")}>Sport</li>
+            <li onClick={()=> navigate("/tech")}>Tech</li>
+            <li onClick={()=> navigate("/science")}>Science</li>
 
         </ul> 
     </div>
