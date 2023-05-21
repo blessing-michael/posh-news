@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+}
+
+
+.nav{
+    background-color: rgb(33, 32, 32);
+    color: white;
+    display: flex;
+    height: 10rem;
+    /* padding: 1rem 2rem; */
+    justify-content: space-between;
+}
+.news{
+    color: red;
+}
+.navbar{
+    font-size: 2rem;
+}
+.show-container{
+  height: 27rem;
+  /* background-color: aquamarine; */
+  background-color: #292828;
+  position: fixed;
+  right: 0%;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  /* background-color: aliceblue; */
+  /* opacity: 0.3; */
+}
+.nav-show{
+  height: 0;
+  overflow: hidden;
+  /* background-color: aliceblue; */
+  transition: all 0.3s ease-out;
+  /* width: 50px; */
+}
+.icons-Na{
+  /* background-color: aliceblue; */
+  /* margin-left: 40%; */
+  margin-right: -90%;
+}
+.profile-div{
+  background-color: rgb(184, 52, 52);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  /* padding: 0.3rem 1rem; */
+ 
+  
+}
+.profile-span{
+  font-size: 1.2rem;
+  margin: 0.3rem 3rem;
+}
+.logo-h2{
+  margin: 0.3rem 1rem;
+}
+.profile-span2{
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* font-size: 1.4rem; */
+  /* font-family: monospace; */
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* font-style: ; */
+  /* font-style: c; */
+  /* font-size: 1.5rem; */
+  /* background-color: azure; */
+  /* margin-bottom: 100%; */
+}
+.logo-div{
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+}
+.nav-underline{
+  height: 1px;
+  background-color: rgb(92, 89, 89);
+  width: 100%;
+  position: absolute;
+  top: 17%;
+
+  left: 0;
+
+
+}
+.icons-nav{
+   position: absolute; 
+  top: 18%; 
+   right: 5%; 
+
+}
+.navbar-icon{
+  font-size: 2rem;
+}
+    
+
+
+@media only screen and (min-width:768px) {
+ 
+  .nav-underline{
+   
+    top: 16%;
+  
+  
+  
+  
+  }
+  .logo-div{
+ 
+    top: 5%;
+ 
+    
+  }
+  .icons-nav{
+    display: none;
+  }
+
+  .icons-Na{
+    display: none;
+  }
+  /* BEGINNING OF NAV STYLING */
+  .link-element{
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+  ul li{
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .nav-show{
+    height: 50rem;
+    position: absolute;
+    top: 16%;
+    left: 30%;
+    align-items: center;
+    /* overflow: hidden; */
+    transition: all 0.3s ease-out;
+    /* width: 50px; */
+}
+.link-element{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin-top: 2%;
+  /* background-color: antiquewhite; */
+  
+}
+li{
+  list-style-type: none;
+  font-size: 1.2rem;
+  /* margin-right: 10%; */
+}
+/* .nav-show  */
+
+.logo-div{
+  margin-top: 1%;
+  /* background-color: aquamarine; */
+}
+.profile{
+  /* color: white; */
+  margin-top: 10%;
+  background-color: rgb(53, 168, 168);
+}
+
+/* END OF NAV STYLING */
+
+
+
+/* home styling begins */
+.welcome {
+    /* color: rgb(32, 31, 31);
+       */
+    color: rgb(170, 166, 166);
+    font-size: 60px;
+    text-align: center;
+    /* margin-top: 0; */
+  }
+  .intro-container {
+    /* background-color: whitesmoke; */
+    height: 400px;
+    /* width: 100%; */
+    margin-top: 10px;
+    position: relative;
+    padding: 50px;
+    top: 0;
+  }
+  .intro-Info {
+    /* margin: auto; */
+    background-color: white;
+    position: relative;
+    /* width: 100%; */
+    /* width: 90%; */
+    /* height: 90%; */
+    top: 0;
+    padding: 20px;
+    left: 2%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    height: 700px;
+    width: 1200px;
+  }
+  
+  .line-through {
+    height: 3px;
+    width: 5px;
+    background-color: rgb(228, 224, 224);
+    width: 800px;
+    position: absolute;
+    top: 20%;
+    right: 13%;
+    border-radius: 3px;
+  }
+  .title {
+    color: black;
+  }
+  .title:hover {
+    color: red;
+  }
+  
+  .featured-title {
+    /* font-size: 50px; */
+    text-transform: capitalize;
+    color: rgb(56, 54, 54);
+    margin-top: 40px;
+  }
+  .home {
+    background-color: whitesmoke;
+  }
+  .line {
+    width: 5px;
+    height: 40px;
+    background-color: red;
+  }
+  .Top-news {
+    margin-top: 40px;
+    /* font-size: 30px; */
+    /* margin-bottom: 20px; */
+  }
+  .top-title {
+    margin-right: 40px;
+    /* font-size: 18px; */
+  }
+  .top-h1 {
+    color: rgb(56, 54, 54);
+    margin-left: 20px;
+  }
+  .home-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    /* background-color: #311921; */
+  }
+  .homenews-Info {
+    /* background-color: #311823; */
+    width: 310px;
+    height: 170px;
+  }
+  .info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(56, 54, 54);
+  }
+  body {
+    background-color: whitesmoke;
+    
+  
+  
+    /* background-color: rgb(58, 58, 162); */
+    /* background-color: rgb(242, 188, 53); */
+  }
+  
+  .line2 {
+    width: 5px;
+    height: 25px;
+    background-color: rgb(242, 188, 53);
+    position: absolute;
+    bottom: -5%;
+  }
+  .top-h2 {
+    color: rgb(56, 54, 54);
+    margin-left: 20px;
+    font-size: 23px;
+  }
+  .news2-Container {
+    /* background-color: #311921; */
+    margin-top: 160px;
+    /* width: 1300px; */
+    /* position: absolute; */
+  }
+  .sport-news {
+    /* background-color: aliceblue; */
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .top-title3 {
+    margin-right: 40px;
+  }
+  .top-h3 {
+    color: rgb(56, 54, 54);
+    margin-left: 20px;
+    font-size: 23px;
+  }
+  .line3 {
+    width: 5px;
+    height: 25px;
+    background-color: rgb(34, 146, 54);
+    position: absolute;
+    bottom: -70%;
+  }
+  .news3-Container {
+    background-color: rgb(223, 219, 215);
+    margin-top: 100px;
+    height: 800px;
+    padding: 30px;
+    /* margin: 0 auto; */
+    /* width: 1300px; */
+    /* margin-left: 0; */
+  
+    /* padding: 50px; */
+  }
+  /* *{
+      margin: 0;
+      padding: 0;
+  } */
+  /* TECHNOLOGY */
+  .technology {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* gap: 10px; */
+    /* grid-template-rows: 1fr 1fr; */
+  }
+  .img-info {
+    margin-left: 20px;
+  }
+  .header-tech {
+    margin-top: 30px;
+  }
+  .startup {
+    color: black;
+    font-size: 50px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+  .startup-des {
+    color: rgb(67, 65, 65);
+    margin-bottom: 30px;
+  }
+  .tech-series {
+    color: rgb(222, 58, 58);
+  }
+  .underlne-startups {
+    width: 200px;
+    height: 5px;
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .news-startup1 {
+    margin-top: 230px;
+  }
+  
+  .number {
+    font-size: 50px;
+    font-weight: bolder;
+  
+    /* background-color: red; */
+  }
+  .number-info {
+    font-size: 30px;
+  }
+  .one {
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: red;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    margin: 20px;
+    /* margin-top: 40px; */
+  }
+  .two {
+    font-size: 30px;
+    font-weight: bolder;
+    /* background-color: red; */
+    height: 40px;
+    width: 40px;
+    /* border-radius: 50%; */
+    padding: 5px;
+    text-align: center;
+    color: black;
+    margin-left: 10px;
+    /* background-color: brown; */
+    /* font-style: italic; */
+  }
+  .table {
+    display: flex;
+    background-color: rgb(94, 90, 90);
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+    /* margin-top: 100px; */
+    /* position: relative; */
+  
+    /* display: grid;
+      grid-template-columns: 1fr 1fr; */
+  }
+  .one-container {
+    /* background-color: #311823; */
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 2px 2px 2px; */
+    height: 220px;
+    /* margin-right:150px; */
+    /* width: 20px; */
+  
+    /* width: 100%; */
+    /* position: absolute; */
+  }
+  .two2 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #381e28;
+    margin-top: 0;
+    max-width: 150px;
+    height: 200px;
+    margin-left: 70px;
+    position: absolute;
+    top: 34px;
+  
+    /* margin-bottom: 50px; */
+  }
+  .technews-title {
+    margin: 20px;
+    color: black;
+  }
+  /* .homenews-Info{
+      background-color:  rgb(106, 102, 94);
+    
+     
+  } */
+  .technews-Info {
+    height: 300px;
+    border: 5px solid brown;
+    text-align: center;
+  }
+  table {
+    position: relative;
+  }
+
+}
