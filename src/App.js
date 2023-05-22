@@ -7,6 +7,7 @@ import Home from "./Home";
 import Business from "./Business";
 import Tech from "./Tech";
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           {/* <Route path="/sign-up" element={<SignUp />} /> */}
           {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
         </Routes>
+        <Footer/>
       </Router>
       {/* <ToastContainer
         position="bottom-center"
