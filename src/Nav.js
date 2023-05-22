@@ -2,11 +2,46 @@ import React, { useState } from 'react'
 import { useNavigate } from "react-router-dom";
 import { HiBars4} from "react-icons/hi2";
 import { CgProfile } from "react-icons/cg";
+import {AiOutlineClose } from "react-icons/ai";
 
 
 function Nav() {
+  const [showbar, setShowbar]= useState(false)
     const navigate = useNavigate();
-    const [showlinks, setShowLinks]= useState(false)
+   
+
+    const show=()=>{
+      console.log('clicked')
+      setShowbar(!showbar)
+    }
+    const closenav=()=>{
+      setShowbar(false )
+  }
+    const closeNews=()=>{
+      setShowbar(false )
+      navigate('/')
+  }
+    const closesport=()=>{
+      setShowbar(false )
+      navigate('/sport')
+  }
+    const closebusiness=()=>{
+      setShowbar(false )
+      navigate('/business')
+  }
+    const closescience=()=>{
+      setShowbar(false )
+      navigate('/science')
+  }
+    const closetech=()=>{
+      setShowbar(false )
+      navigate('/tech')
+  }
+    // const [showlinks, setShowLinks]= useState(true)
+  //   const showbar=()=>{
+  //     console.log('clicked')
+  //     setShowLinks(true)
+  // }
   return (
     <nav className='nav'>
       <div className="profile-div">
@@ -18,7 +53,7 @@ function Nav() {
         <h1>posh <span className='news'>news</span></h1>
       </div>
       <div className="nav-underline"></div>
-      <div className="icons-nav">
+      <div className="icons-nav" onClick={show}>
         <div className="navbar-icon"><HiBars4 /></div>
       </div>
 
@@ -35,13 +70,16 @@ function Nav() {
     </div>
    */}
 
-    <div className={ ` ${showlinks? "nav-show show-container" : 'nav-show'}`}>
+    <div className={ `${showbar? ' show' : 'nav-show'}`}>
+    <div className="close-icon" onClick={closenav}>
+        <AiOutlineClose className='show-closeicon' />
+        </div>
         <ul className='link-element'>
-            {/* <li onClick={()=> navigate("/")}>Home</li> */}
-            <li onClick={()=> navigate("/business")}>Business</li>
-            <li onClick={()=> navigate("/sport")}>Sport</li>
-            <li onClick={()=> navigate("/tech")}>Tech</li>
-            <li onClick={()=> navigate("/science")}>Science</li>
+            <li onClick={closeNews}>News</li>
+            <li onClick={ closebusiness}>Business</li>
+            <li onClick={ closesport}>Sport</li>
+            <li onClick={ closetech}>Tech</li>
+            <li onClick={ closescience}>Science</li>
 
         </ul> 
     </div>

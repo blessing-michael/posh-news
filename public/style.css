@@ -1,6 +1,23 @@
 *{
     margin: 0;
 }
+.link-element{
+  margin-top: 40%;
+}
+ul li{
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  list-style-type: none;
+  border-bottom: 2px solid grey;
+
+}
+ul li:hover{
+  
+   cursor: pointer;
+   
+ 
+ }
 
 
 .nav{
@@ -17,23 +34,26 @@
 .navbar{
     font-size: 2rem;
 }
-.show-container{
-  height: 27rem;
+.show{
+  /* height: 27rem; */
   /* background-color: aquamarine; */
-  background-color: #292828;
-  position: fixed;
-  right: 0%;
-  top: 0;
-  width: 70%;
+  background-color:  rgb(33, 32, 32);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 90%;
   height: 100%;
-  /* background-color: aliceblue; */
-  /* opacity: 0.3; */
+ 
 }
 .nav-show{
   height: 0;
   overflow: hidden;
   /* background-color: aliceblue; */
   transition: all 0.3s ease-out;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 70%;
   /* width: 50px; */
 }
 .icons-Na{
@@ -98,10 +118,36 @@
 .navbar-icon{
   font-size: 2rem;
 }
+.close-icon{
+  position: absolute;
+  right: 10%;
+  top: 7%;
+}
+.show-closeicon{
+  font-size: 2rem;
+  background-color: rgb(141, 141, 86);
+  border-radius: 50%;
+}
     
 
 
 @media only screen and (min-width:768px) {
+  ul li{
+  
+    border-bottom: none
+    
+  
+  }
+  ul li:hover{
+   /* border-bottom: none; */
+    border-bottom: 2px solid rgb(154, 60, 60);
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+  
+  }
+  .close-icon{
+   display: none;
+  }
  
   .nav-underline{
    
@@ -147,7 +193,7 @@
   display: flex;
   justify-content: space-between;
   width: 500px;
-  margin-top: 2%;
+  margin-top: 1%;
   /* background-color: antiquewhite; */
   
 }
