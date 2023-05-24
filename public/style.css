@@ -235,10 +235,16 @@ ul li:hover{
 .display{
   display: none;
 }
+.newsdata{
+  display: flex;
+  flex-direction: column;
+}
     
 
 
 @media only screen and (min-width:768px) {
+
+
   .display{
     display: none;
   }
@@ -371,6 +377,7 @@ li{
   .maincontainer{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: ; */
     /* gap: 6rem; */
     /* border-top: 1px solid red; */
 

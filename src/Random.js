@@ -2,9 +2,18 @@ const projects= [
 
     {
         id: 1,
-        // img: "../public/image/tastyDelights.PNG.Untracked",
         title: "Facebook owner Meta fined €1.2bn for mishandling user information",
         news:"ggggg"
+    },
+    {
+        id: 2,
+        title: "me and you",
+        news:"come here"
+    },
+    {
+        id: 3,
+        title: "i'm coming home",
+        news:"get ready"
     },
     // {
     //     id: 2,

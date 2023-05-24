@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import RandomDisplay from './RandomDisplay';
 
+
 function Science() {
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState([]);
@@ -99,7 +100,7 @@ function Science() {
       <div
         className="head-title"
         style={{
-          backgroundColor: "red",
+          backgroundColor: "rgb(8, 8, 113)",
           // position: "absolute",
           left: "0",
           width: "100%",
@@ -107,7 +108,7 @@ function Science() {
           padding: "6px 0px",
         }}
       >
-        <h2 style={{ color: "white", marginLeft: "40px" }}>BUSINESS</h2>
+        <h2 style={{ color: "white", marginLeft: "40px" }}>SCIENCE</h2>
       </div>
       {/* </section> */}
 

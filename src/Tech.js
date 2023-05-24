@@ -99,7 +99,7 @@ function Tech() {
       <div
         className="head-title"
         style={{
-          backgroundColor: "red",
+          backgroundColor: "rgb(14, 92, 14)",
           // position: "absolute",
           left: "0",
           width: "100%",
@@ -107,7 +107,7 @@ function Tech() {
           padding: "6px 0px",
         }}
       >
-        <h2 style={{ color: "white", marginLeft: "40px" }}>BUSINESS</h2>
+        <h2 style={{ color: "white", marginLeft: "40px" }}>TECHNOLOGY</h2>
       </div>
       {/* </section> */}
 

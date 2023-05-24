@@ -98,7 +98,7 @@ function Sport() {
       <div
         className="head-title"
         style={{
-          backgroundColor: "red",
+          backgroundColor: "rgb(231, 185, 67)",
           // position: "absolute",
           left: "0",
           width: "100%",
@@ -106,7 +106,7 @@ function Sport() {
           padding: "6px 0px",
         }}
       >
-        <h2 style={{ color: "white", marginLeft: "40px" }}>BUSINESS</h2>
+        <h2 style={{ color: "white", marginLeft: "40px" }}>SPORT</h2>
       </div>
       {/* </section> */}
 
@@ -168,7 +168,7 @@ function Sport() {
               </div>
               {/* end of info news container */}
 
-              <div className="display"><RandomDisplay/></div>
+              {/* <div className="display"><RandomDisplay/></div> */}
             </div>
           </div>
         );

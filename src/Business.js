@@ -110,6 +110,9 @@ function Business() {
         <h2 style={{ color: "white", marginLeft: "40px" }}>BUSINESS</h2>
       </div>
       {/* </section> */}
+      {/* <div className="accommodate"> */}
+
+   
 
       <div className="parent-business">
 
@@ -169,9 +172,13 @@ function Business() {
               </div>
               {/* end of info news container */}
 
-              <div className="display"><RandomDisplay/></div>
+           
             </div>
+            
+            <div className="display"><RandomDisplay/></div>
+            
           </div>
+            //  </div>
         );
       })}
 

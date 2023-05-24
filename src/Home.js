@@ -1,9 +1,11 @@
 import React from 'react'
+import RandomDisplay from './RandomDisplay';
 
 // import { Link, useNavigate } from "react-router-dom";
 // import Footer from "./Footer";
 
 function Home() {
+    return <div><RandomDisplay/></div>
 //   const navigate = useNavigate();
 //   function HandleScience() {
 //     navigate("/science");

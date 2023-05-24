@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import projects from "./Random";
+import projects from "./Random";  
+
 
 function RandomDisplay() {
     const [data, setData]= useState(projects)
